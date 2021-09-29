@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">>
+	<TextView
+		android:text="@string/app_name"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/textView1" />
+	<EditText
+		android:gravity="center"
+		android:layout_marginTop="10dp"
+		android:inputType="number"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/firstNumberEditText" 
+		android:background="@color/colorPrimaryLight"/>
+	<EditText
+		android:gravity="center"
+		android:layout_marginTop="10dp"
+		android:inputType="number"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/secondNumberEditText"
+		android:background="@color/colorPrimaryLight"/>
+	</LinearLayout>
+    <LinearLayout
+		android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:text="@string/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/addButton"
+            android:background="@color/colorAccent"
+			/>
+
+        <Button
+            android:background="@color/colorAccent"
+            android:text="@string/sub_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/subButton" 
+			/>
+        <Button
+            android:background="@color/colorAccent"
+            android:text="@string/div_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/divButton"
+			/>
+        <Button
+            android:background="@color/colorAccent"
+            android:text="@string/mul_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mulButton"
+			/>
+    </LinearLayout>
+<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="bottom"
+		android:id="@+id/linearLayout2">
+	<TextView
+		android:text="@string/ans_text"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:id="@+id/answerTextView" 
+		android:background="@color/colorPrimary"
+		android:textColor="?android:attr/textColorPrimary"
+		android:textSize="35dp"
+		android:gravity="center"
+	/>
+	</LinearLayout>
+
+
+
+
+
+</LinearLayout>
